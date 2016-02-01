@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Input:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ohf-bj-S7i">
+                                <rect key="frame" x="10" y="70" width="37" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Output (x0.06):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Qu-PR-86p">
+                                <rect key="frame" x="10" y="207" width="98.5" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Output (x0.3):" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hxM-14-73R">
+                                <rect key="frame" x="10" y="374" width="90" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aMh-Vj-5nz">
+                                <rect key="frame" x="10" y="234" width="300" height="100"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="q04-pB-Z9b"/>
+                                    <constraint firstAttribute="height" constant="100" id="xt8-V3-bkW"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mPE-Da-305">
+                                <rect key="frame" x="10" y="401" width="300" height="150"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="aY0-dK-rKx"/>
+                                    <constraint firstAttribute="width" constant="300" id="j60-wt-nff"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234567890" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7CR-vc-bqk">
+                                <rect key="frame" x="10" y="97" width="118.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hxM-14-73R" firstAttribute="top" secondItem="2Qu-PR-86p" secondAttribute="bottom" constant="150" id="26B-Mq-r1K"/>
+                            <constraint firstItem="mPE-Da-305" firstAttribute="top" secondItem="hxM-14-73R" secondAttribute="bottom" constant="10" id="5Bg-NV-VrR"/>
+                            <constraint firstItem="7CR-vc-bqk" firstAttribute="leading" secondItem="Ohf-bj-S7i" secondAttribute="leading" id="CSC-qg-gVk"/>
+                            <constraint firstItem="mPE-Da-305" firstAttribute="leading" secondItem="hxM-14-73R" secondAttribute="leading" id="E03-5f-AaW"/>
+                            <constraint firstItem="2Qu-PR-86p" firstAttribute="leading" secondItem="Ohf-bj-S7i" secondAttribute="leading" id="GGm-qk-BKX"/>
+                            <constraint firstItem="Ohf-bj-S7i" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="KN3-Wm-40h"/>
+                            <constraint firstItem="Ohf-bj-S7i" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="Mna-ZO-JZl"/>
+                            <constraint firstItem="2Qu-PR-86p" firstAttribute="top" secondItem="Ohf-bj-S7i" secondAttribute="bottom" constant="120" id="RFN-Ty-Q1Y"/>
+                            <constraint firstItem="7CR-vc-bqk" firstAttribute="top" secondItem="Ohf-bj-S7i" secondAttribute="bottom" constant="10" id="d71-hk-Jki"/>
+                            <constraint firstItem="aMh-Vj-5nz" firstAttribute="leading" secondItem="2Qu-PR-86p" secondAttribute="leading" id="dMg-cC-Fw9"/>
+                            <constraint firstItem="Ohf-bj-S7i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="kVv-1f-Qbp"/>
+                            <constraint firstItem="aMh-Vj-5nz" firstAttribute="top" secondItem="2Qu-PR-86p" secondAttribute="bottom" constant="10" id="tDf-5q-boJ"/>
+                            <constraint firstItem="hxM-14-73R" firstAttribute="leading" secondItem="2Qu-PR-86p" secondAttribute="leading" id="z5d-ah-cKQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="diecastView1" destination="aMh-Vj-5nz" id="rDL-y3-q0i"/>
+                        <outlet property="diecastView2" destination="mPE-Da-305" id="C1G-Fs-Yzk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="181" y="329"/>
+        </scene>
+    </scenes>
+</document>

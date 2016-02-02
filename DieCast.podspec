@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   s.social_media_url   = "https://twitter.com/taketin"
   s.platform     = :ios, "8.0"
   s.ios.deployment_target = "8.0"
-  s.source       = { :git => "https://github.com/taketin/DieCast.git", :tag => "0.1.0" }
+  s.source       = { :git => "https://github.com/taketin/DieCast.git", :tag => "#{s.version}" }
   s.source_files  = "DieCast/*.swift"
   s.resources = "DieCast/Images.xcassets"
 end

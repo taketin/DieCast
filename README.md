@@ -16,6 +16,11 @@ DieCast is a library for convert the material (e.g. number) to the image in Swif
 - Run `carthage update`.
 - Link your app with `DieCast.framework` in `Carthage/Build`
 
+### CocoaPods
+
+- Insert pod 'DieCast', '~> 0.1.1' to your Podfile.
+- Run `pod install`
+
 ## Usage
 
 Look at `Demo` App. very easy.

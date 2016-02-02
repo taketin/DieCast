@@ -1,5 +1,6 @@
 # DieCast
 [![Build Status](https://travis-ci.org/taketin/DieCast.svg?branch=master)](https://travis-ci.org/taketin/DieCast)
+[![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
 DieCast is a library for convert the material (e.g. number) to the image in Swift.
 
@@ -17,12 +18,42 @@ DieCast is a library for convert the material (e.g. number) to the image in Swif
 
 ## Usage
 
-- Look at `Demo` App. very easy.
-- If you want to use your own images with Asset Catalog, Please follow.
+Look at `Demo` App. very easy.
 
-```Swift
+```swift
+if let diecast = DieCast(material: 1234567890) {
+    let diecastView = diecast.press()
+    view.addSubview(diecastView)
+}
+```
+
+If you want to use your own images with Asset Catalog, Please follow.
+
+(The numbers of the image, please put the file name from 0 to 9 after the prefix.)
+
+```swift
 if let diecast = DieCast(material: 1234567890, type: IntCast.Custom, filenamePrefix: "your_image_prefix_") {
     ...
+}
+```
+
+### Custom settings
+
+- `magnification`
+- `margin`
+
+Please follow.
+
+```swift
+if let diecast = DieCast(material: 1234567890) {
+	// setting to magnification of image.
+	diecast.magnification = 0.06
+
+	// setting to margin of each images.
+	diecast.margin = 5.0
+
+    let diecastView = diecast.press()
+    view.addSubview(diecastView)
 }
 ```
 

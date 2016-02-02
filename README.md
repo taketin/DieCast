@@ -18,7 +18,7 @@ DieCast is a library for convert the material (e.g. number) to the image in Swif
 
 ### CocoaPods
 
-- Insert pod 'DieCast', '~> 0.1.1' to your Podfile.
+- Insert `pod 'DieCast', '~> 0.1.1'` to your Podfile.
 - Run `pod install`
 
 ## Usage

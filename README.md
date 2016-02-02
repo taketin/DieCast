@@ -1,4 +1,5 @@
 # DieCast
+[![Build Status](https://travis-ci.org/taketin/DieCast.svg?branch=master)](https://travis-ci.org/taketin/DieCast)
 
 DieCast is a library for convert the material (e.g. number) to the image in Swift.
 

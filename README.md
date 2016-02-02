@@ -40,17 +40,22 @@ if let diecast = DieCast(material: 1234567890, type: IntCast.Custom, filenamePre
 ### Custom settings
 
 - `magnification`
+- `height`
 - `margin`
 
 Please follow.
 
 ```swift
 if let diecast = DieCast(material: 1234567890) {
-	// setting to magnification of image.
-	diecast.magnification = 0.06
+    // setting to magnification of image.
+    diecast.magnification = 0.06
 
-	// setting to margin of each images.
-	diecast.margin = 5.0
+    // setting to height of image, width will be the same ratio.
+    // (magnification will be applied in priority.)
+    diecast.height = 50
+
+    // setting to margin of each images.
+    diecast.margin = 5.0
 
     let diecastView = diecast.press()
     view.addSubview(diecastView)

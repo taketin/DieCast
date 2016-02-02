@@ -31,4 +31,12 @@ class DieCastTests: XCTestCase {
         let diecastView = DieCast(material: 1234567890)!.press()
         XCTAssertTrue(diecastView.subviews.count == 10, "DieCast can press to int type")
     }
+
+    func testPressWithHeightSetting() {
+        let diecast = DieCast(material: 1234567890)!
+        diecast.height = 50.0
+        let diecastView = diecast.press()
+        print(diecastView.frame)
+        XCTAssertEqual(CGRectGetHeight(diecastView.frame), 50, "Pressed view has height should be 50")
+    }
 }

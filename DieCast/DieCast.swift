@@ -13,6 +13,7 @@ public class DieCast {
     // MARK: Settings API
 
     public var magnification: CGFloat?
+    public var height: CGFloat?
     public var margin: CGFloat = 3.0
 
     // MARK: Private
@@ -66,14 +67,23 @@ public class DieCast {
             }
 
             let magnification = self.magnification ?? castUtility.defaultMagnification
-            let width = CGRectGetWidth($0.frame) * magnification
-            let height = CGRectGetHeight($0.frame) * magnification
+
+            let aWidth: CGFloat
+            let aHeight: CGFloat
+            if let height = height {
+                let ratio: CGFloat = CGRectGetHeight($0.frame) / height
+                aWidth = CGRectGetWidth($0.frame) / ratio
+                aHeight = height
+            } else {
+                aHeight = CGRectGetHeight($0.frame) * magnification
+                aWidth = CGRectGetWidth($0.frame) * magnification
+            }
 
             $0.frame = CGRect(
                 x: x,
                 y: 0,
-                width: width,
-                height: height
+                width: aWidth,
+                height: aHeight
             )
             lastImage = $0
             pressedView.addSubview($0)

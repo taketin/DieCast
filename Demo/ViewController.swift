@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
 
         if let diecast = DieCast(material: 1234567890) {
-            diecast.magnification = 0.06
+            diecast.height = 60
             let diecastView = diecast.press()
             diecastView1.addSubview(diecastView)
         }

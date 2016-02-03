@@ -12,7 +12,7 @@ DieCast is a library for convert the material (e.g. number) to the image in Swif
 
 ### Carthage
 
-- Insert github "taketin/DieCast" ~> 0.1.0 to your Cartfile.
+- Insert `github "taketin/DieCast" ~> 0.1.1` to your Cartfile.
 - Run `carthage update`.
 - Link your app with `DieCast.framework` in `Carthage/Build`
 

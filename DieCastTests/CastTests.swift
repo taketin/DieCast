@@ -19,7 +19,7 @@ class CastTests: XCTestCase {
     }
 
     func testIntDigitalTypeCast() {
-        let utility = CastUtility(type: IntCast.Digital, filenamePrefix: nil)
+        let utility = CastUtility(type: IntCast.digital, filenamePrefix: nil)
         XCTAssertNotNil(utility.type as? IntCast, "Cast type should be IntCast")
         XCTAssertEqual(utility.filenamePrefix, "diecast_digital_", "Filename prefix should be 'diecast_digital_'")
         XCTAssertEqual(utility.defaultMagnification, 0.1, "Default magnification should be 0.1")
@@ -27,7 +27,7 @@ class CastTests: XCTestCase {
     }
 
     func testIntCustomTypeCast() {
-        let utility = CastUtility(type: IntCast.Custom, filenamePrefix: "test_prefix_")
+        let utility = CastUtility(type: IntCast.custom, filenamePrefix: "test_prefix_")
         XCTAssertNotNil(utility.type as? IntCast, "Cast type should be IntCast")
         XCTAssertEqual(utility.filenamePrefix, "test_prefix_", "Filename prefix should be 'test_prefix_'")
         XCTAssertEqual(utility.defaultMagnification, 1.0, "Default magnification should be 1.0")

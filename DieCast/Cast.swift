@@ -8,12 +8,12 @@
 
 import UIKit
 
-let DefaultCast = IntCast.Digital
+let DefaultCast = IntCast.digital
 
 public protocol CastType {}
 
 public enum IntCast: CastType {
-    case Digital, Custom
+    case digital, custom
 }
 
 struct CastUtility {
@@ -22,9 +22,9 @@ struct CastUtility {
         get {
             if let type = type as? IntCast {
                 switch type {
-                case .Digital:
+                case .digital:
                     return "diecast_digital_"
-                case .Custom:
+                case .custom:
                     return customFilenamePrefix
                 }
             }
@@ -36,9 +36,9 @@ struct CastUtility {
         get {
             if let type = type as? IntCast {
                 switch type {
-                case .Digital:
+                case .digital:
                     return 0.1
-                case .Custom:
+                case .custom:
                     return 1.0
                 }
             }
@@ -50,9 +50,9 @@ struct CastUtility {
         get {
             if let type = type as? IntCast {
                 switch type {
-                case .Digital:
+                case .digital:
                     return false
-                case .Custom:
+                case .custom:
                     return true
                 }
             }
@@ -61,7 +61,7 @@ struct CastUtility {
         }
     }
 
-    private(set) var customFilenamePrefix: String?
+    fileprivate(set) var customFilenamePrefix: String?
 
     // MARK: Initializer
 

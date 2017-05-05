@@ -1,4 +1,5 @@
 # DieCast
+[![Swift 3](https://img.shields.io/badge/Swift-3.0-orange.svg?style=flat)](https://swift.org)
 [![Build Status](https://travis-ci.org/taketin/DieCast.svg?branch=master)](https://travis-ci.org/taketin/DieCast)
 [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 

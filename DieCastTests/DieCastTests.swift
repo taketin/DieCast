@@ -23,7 +23,7 @@ class DieCastTests: XCTestCase {
     }
 
     func testInitOfCustomIntType() {
-        let diecast = DieCast(material: 1234567890, type: IntCast.Custom, filenamePrefix: "test")
+        let diecast = DieCast(material: 1234567890, type: IntCast.custom, filenamePrefix: "test")
         XCTAssertNotNil(diecast, "DieCast can convert from int to custom image")
     }
 
@@ -37,6 +37,6 @@ class DieCastTests: XCTestCase {
         diecast.height = 50.0
         let diecastView = diecast.press()
         print(diecastView.frame)
-        XCTAssertEqual(CGRectGetHeight(diecastView.frame), 50, "Pressed view has height should be 50")
+        XCTAssertEqual(diecastView.frame.height, 50, "Pressed view has height should be 50")
     }
 }

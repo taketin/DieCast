@@ -3,4 +3,5 @@ osx_image: xcode8.3
 xcode_project: DieCast.xcodeproj
 xcode_scheme: DieCastTests
 xcode_sdk: iphonesimulator
-
+script:
+    - xcodebuild clean build -sdk iphonesimulator -scheme DieCastTests CODE_SIGNING_REQUIRED=NO

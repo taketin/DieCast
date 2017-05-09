@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "DieCast"
-  s.version      = "0.1.1"
+  s.version      = "0.2.0"
   s.summary      = "A convert the material (e.g. number) to the image library written in Swift."
   s.homepage     = "https://github.com/taketin/DieCast"
   s.license      = "MIT (example)"
